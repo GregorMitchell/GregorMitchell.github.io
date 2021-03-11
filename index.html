@@ -1,253 +1,333 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Gregor Mitchell</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script
-      src="https://kit.fontawesome.com/836a943e18.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-  </head>
-  <body>
 
-<!--NavBar =======================================================================================================-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Gregor Mitchell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://kit.fontawesome.com/836a943e18.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
 
-    <header>
+<body>
+
+  <!--NavBar =======================================================================================================-->
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="burger-menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#landing-page">
+              <img src="images/profile-pic.jpg" alt="Gregor Mitchell" class="profile-pic nav-link" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#landing-page" class="nav-link" style="font-size:2rem;">Gregor Mitchell</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#workexperience" class="nav-link">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#interests" class="nav-link">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/gregor-mitchell-849b481bb/" target="_blank" class="nav-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/gmitchell2000" target="_blank" class="nav-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <!--Landing Page =======================================================================================================-->
+
+    <section id="landing-page" class="landing-page">
       <div class="container">
-        <nav>
-          <div class="burger-menu-icon">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+        <div class="main-message">
+          <h2>Gregor Mitchell</h2>
+          <h3>Software Developer</h3>
+          <div>
+            <a href="#projects" class="scroll-down">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
           </div>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#landing-page">
-                <img
-                  src="images/profile-pic.jpg"
-                  alt="Gregor Mitchell"
-                  class="profile-pic nav-link"
-                />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#landing-page" class="nav-link" style="font-size:2rem;">Gregor Mitchell</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#workexperience" class="nav-link">Work Experience</a>
-            </li>
-            <li class="nav-item">
-              <a href="#education" class="nav-link">Education</a>
-            </li>
-            <li class="nav-item">
-              <a href="#interests" class="nav-link">Interests</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/in/gregor-mitchell-849b481bb/" target="_blank" class="nav-link">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/gmitchell2000" target="_blank" class="nav-link">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-    <main>
+    </section>
 
-<!--Landing Page =======================================================================================================-->
+    <!--Projects =======================================================================================================-->
 
-      <section id="landing-page" class="landing-page">
-        <div class="container">
-          <div class="main-message">
-            <h2>Gregor Mitchell</h2>
-            <h3>Software Developer</h3>
-            <div>
-              <a href="#projects" class="scroll-down">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
+    <section id="projects" class="projects">
+      <div class="project-title-heading">
+        <h2>PROJECTS</h2>
+        <p>Here are some of the projects I have undertaken whilst at University</p>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div class="project-item">
+        <div class="project-img has-margin-right">
+          <img src="images/drivr.png" />
         </div>
-      </section>
+        <div class="project-description">
+          <h2>DRIVR - An at Home Golf Swing Trainer</h2>
+          <p>
+            For my Honours Project I decided to create an at home golf swing analyser using Unity and Arduino.
+            The system uses an IR sensor and a Gyroscope to measure the speed and angle of the user's swing, which
+            are then transmitted to Unity using Bluetooth serial ports. The golf ball flight is then calculated and
+            simulated to the user using the Unity game engine.
+          </p>
+          <br />
+          <p>
+            Team size: Solo Project
+          </p>
+          <a href="https://github.com/gmitchell2000/HonoursProject-DRIVR" class="project-link" target="_blank"><i
+              class="fa fa-github" aria-hidden="true"> View Code</i></a>
+        </div>
+      </div>
+      <hr />
+      <div class="project-item">
+        <div class="project-description has-margin-right">
+          <h2>OpenGL - 3D Graphics Programming</h2>
+          <p>
+            For an optional 3D Graphics module we were tasked with creating
+            creating and rendering objects in 3D using OpenGL. This included
+            transformations to the objects, particle effects and terrain generation using Perlin Noise.
+          </p>
+          <br />
+          <p>
+            Team size: Solo Project
+          </p>
+          <a href="#" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
+        </div>
+        <div class="project-img">
+          <img src="images/graphics.png" />
+        </div>
+      </div>
+      <hr />
+      <div class="project-item">
+        <div class="project-img has-margin-right">
+          <img src="images/crane-ium.png" />
+        </div>
+        <div class="project-description">
+          <h2>Crane-ium - Online Quiz Game</h2>
+          <p>
+            As a team of 10 we were tasked with creating an online quizzing application to be used by a group of
+            friends. We chose to create Crane-ium, a webapp designed to allow users to hosst an online quiz in which
+            they get to choose the categories. The host can then invite up to 10 friends to join in the fun. The
+            purpose of this task was to allow us to become more familiar with working in a large team, giving us a
+            chance to practice things like Agile methodologies and source control. Craneware, who we have worked with
+            in the past acted as the client for the project, allowing us to obtain requirements and pitch our ideas to
+            them
+          </p>
+          <br />
+          <p>
+            Team size: 10 students
+          </p>
+          <a href="https://github.com/CharlieHewitt/IndustrialTeamProject" class="project-link" target="_blank"><i
+              class="fa fa-github" aria-hidden="true"> View Code</i></a>
+        </div>
+      </div>
+      <hr />
+      <div class="project-item">
+        <div class="project-img has-margin-right">
+          <img src="images/outbreak.png" />
+        </div>
+        <div class="project-description">
+          <h2>Outbreak - Zombie Shooter With a Twist</h2>
+          <p>
+            For our Games Programming module we were tasked with creating a game of our choosing. We were required to
+            come up with an idea, plan and then implement the game using an engine of our choosing. I created
+            Outbreak, a top-down zombie shooter that requires you to cure the zombies, as you play as a doctor sworn
+            to their Hippocratic oath. The game features path-finding AI for the zombies, meaning they can chase you
+            all around the map. I deicded to use Godot as my engine for this game, as I had prior experience using it.
+          </p>
+          <br />
+          <p>
+            Team size: Solo Project
+          </p>
+          <a href="#" class="project-link" target="_blank"><i class="fa fa-github" aria-hidden="true"> View Code</i></a>
+        </div>
+      </div>
+      <hr />
+      <div class="project-item">
+        <div class="project-description has-margin-right">
+          <h2>Medical Procedure Comparison Website</h2>
+          <p>
+            This project required us to create a website which allows users to compare the cost of different medical
+            procedures throughout the United States. The website required both a frontend and a backend, meaning we
+            had to split into 2 development teams. This module was our first experience working in a large development
+            group, meaning it provided us with vital, necessary experience on how to communicate properly in order
+            to achieve our goal. We also got our first taste of developing a product whilst working in an Agile
+            environment.
+          </p>
+          <br />
+          <p>
+            Team size: 7 students
+          </p>
+          <br />
+          <p class="project-link"><i> Code not available</i></p>
+        </div>
+      </div>
+      <hr />
+    </section>
 
-<!--Projects =======================================================================================================-->
+    <!--Work Experience ================================================================================================-->
 
-      <section id="projects" class="projects">
-        <div class="project-title-heading">
-          <h2>PROJECTS</h2>
-          <p>Here are some of the projects I have undertaken whilst at University</p>
+    <section id="workexperience" class="workeduint">
+      <div class="workeduint-title-heading">
+        <h2>Work Experience</h2>
+      </div>
+      <div class="workeduint-item">
+        <div class="workeduint-description">
+          <h2>Barista - Patisserie Valerie</h2>
+          <p>
+            I took this job as a way of supporting myself through University. As Patisserie Valerie is a busy
+            city-centre
+            café, I am often found in high pressure situations, where my failure to perform could result in a bad
+            experience for a customer. This could lead to bad reviews, tarnishing the reputation of the chain. Despite
+            this, I am always able to succeed, and I somewhat thrive in these high-pressure situations. During my time
+            at the cafe, I am used to working in a team to reach the goal set for us. I am able to help out a fellow
+            colleague in order to complete the job successfully.
+          </p>
+          <br />
+          <p>
+            August 2018 - Present
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h2>Web Development Project - Craneware</h2>
+          <p>
+            As part of a team we were tasked with creating a quizing application by our client Craneware, inspired by
+            the
+            massive increase in popularity of online quizzing due to the 2020 lockdown. As a team we developed an online
+            quiz app, receving excellent feedback from the client and an A grade for the module.
+          </p>
+          <br />
+          <p>
+            October 2020 - November 2020
+          </p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h2>Waiter - Rissons at Springvale</h2>
+          <p>
+            I took his job as a way of making extra money and gaining good life experience whilst still in school. For
+            the last few months at my job as a waiter I was one of the most senior and valued members of the team. I was
+            therefore entrusted with additional responsibilities, overseeing the dining room, telling other staff what
+            needed done and learning how to delegate jobs. During this time, I also had to train new staff on how the
+            restaurant was run, how to wait a table and how to clean up.
+          </p>
+          <br />
+          <p>
+            March 2016 - August 2017
+          </p>
         </div>
-        <div class="project-item">
-          <div class="project-img has-margin-right">
-            <img src="images/drivr.png" />
-          </div>
-          <div class="project-description">
-            <h2>DRIVR - An at Home Golf Swing Trainer</h2>
-            <p>
-              For my Honours Project I decided to create an at home golf swing analyser using Unity and Arduino.
-              The system uses an IR sensor and a Gyroscope to measure the speed and angle of the user's swing, which 
-              are then transmitted to Unity using Bluetooth serial ports. The golf ball flight is then calculated and 
-              simulated to the user using the Unity game engine.
-            </p>
-            <br />
-            <p>
-              Team size: Solo Project
-            </p>
-            <a href="https://github.com/gmitchell2000/HonoursProject-DRIVR" class="project-link" target="_blank"
-              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
-            >
-          </div>
-        </div>
-        <hr />
-        <div class="project-item">
-          <div class="project-description has-margin-right">
-            <h2>OpenGL - 3D Graphics Programming</h2>
-            <p>
-              For an optional 3D Graphics module we were tasked with creating 
-              creating and rendering objects in 3D using OpenGL. This included 
-              transformations to the objects, particle effects and terrain generation using Perlin Noise.
-            </p>
-            <br />
-            <p>
-              Team size: Solo Project
-            </p>
-            <a href="#" class="project-link" target="_blank"
-              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
-            >
-          </div>
-          <div class="project-img">
-            <img src="images/graphics.png" />
-          </div>
-        </div>
-        <hr />
-        <div class="project-item">
-          <div class="project-img has-margin-right">
-            <img src="images/crane-ium.png" />
-          </div>
-          <div class="project-description">
-            <h2>Crane-ium - Online Quiz Game</h2>
-            <p>
-              As a team of 10 we were tasked with creating an online quizzing application to be used by a group of
-              friends. We chose to create Crane-ium, a webapp designed to allow users to hosst an online quiz in which 
-              they get to choose the categories. The host can then invite up to 10 friends to join in the fun. The 
-              purpose of this task was to allow us to become more familiar with working in a large team, giving us a 
-              chance to practice things like Agile methodologies and source control. Craneware, who we have worked with 
-              in the past acted as the client for the project, allowing us to obtain requirements and pitch our ideas to 
-              them
-            </p>
-            <br />
-            <p>
-              Team size: 10 students
-            </p>
-            <a href="https://github.com/CharlieHewitt/IndustrialTeamProject" class="project-link" target="_blank"
-              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
-            >
-          </div>
-        </div>
-        <hr />
-        <div class="project-item">
-          <div class="project-img has-margin-right">
-            <img src="images/outbreak.png" />
-          </div>
-          <div class="project-description">
-            <h2>Outbreak - Zombie Shooter With a Twist</h2>
-            <p>
-              For our Games Programming module we were tasked with creating a game of our choosing. We were required to 
-              come up with an idea, plan and then implement the game using an engine of our choosing. I created 
-              Outbreak, a top-down zombie shooter that requires you to cure the zombies, as you play as a doctor sworn 
-              to their Hippocratic oath. The game features path-finding AI for the zombies, meaning they can chase you 
-              all around the map. I deicded to use Godot as my engine for this game, as I had prior experience using it.
-            </p>
-            <br />
-            <p>
-              Team size: Solo Project
-            </p>
-            <a href="#" class="project-link" target="_blank"
-              ><i class="fa fa-github" aria-hidden="true"> View Code</i></a
-            >
-          </div>
-        </div>
-        <hr />
-        <div class="project-item">
-          <div class="project-description has-margin-right">
-            <h2>Medical Procedure Comparison Website</h2>
-            <p>
-              This project required us to create a website which allows users to compare the cost of different medical 
-              procedures throughout the United States. The website required both a frontend and a backend, meaning we 
-              had to split into 2 development teams. This module was our first experience working in a large development 
-              group, meaning it provided us with vital, necessary experience on how to communicate properly in order 
-              to achieve our goal. We also got our first taste of developing a product whilst working in an Agile 
-              environment.
-            </p>
-            <br />
-            <p>
-              Team size: 7 students
-            </p>
-            <br />
-            <p class="project-link"><i> Code not available</i></p>
-          </div>
-        </div>
-        <hr />
-      </section>
+      </div>
+      <hr />
+    </section>
 
-<!--Interests ======================================================================================================-->
+    <!--Education ================================================================================================-->
 
-      <section id="interests" class="interests">
-        <div class="container">
-          <div class="interests-img">
-            <div class="interests-text-box">
-              <h2>Interests</h2>
-            </div>
-            <img
-              src="images/tri-pic.jpg"
-              alt="Chaoo Charles"
-              class="interests-pic"
-            />
-            <br />
-            <img
-              src="images/golf-pic.jpg"
-              alt="Chaoo Charles"
-              class="interests-pic"
-            />
-          </div>
-          <div class="interests-text-box">
+    <section id="education" class="workeduint">
+      <div class="workeduint-title-heading">
+        <h2>Education</h2>
+      </div>
+      <div class="workeduint-item">
+        <div class="workeduint-description">
+          <h2>University of Dundee</h2>
+          <p>
+            Applied Computing - Bachelor of Science
+          </p>
+          <br />
+          <p>
+            August 2017 - Present
+          </p>
+          <br />
+          <br />
+          <h2>Strathaven Academy</h2>
+          <p>
+            1 x Adv. Higher (Computing Science)
+          </p>
+          <p>
+            5 x Highers (inc. Maths and English)
+          </p>
+          <p>
+            7 x National 5's (inc. Maths and English)
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!--Interests ======================================================================================================-->
+
+      <section id="interests" class="workeduint">
+        <div class="workeduint-title-heading">
+          <h2>Interests</h2>
+        </div>
+        <div class="workeduint-item">
+          <div class="workeduint-description">
             <p>
-              Whilst at University I have been an avid member of the Dundee University Triathlon Team, 
-              having served on the committee for 3 years, including 1 year as Vice Captain. I am an avid golfer, 
-              playing at Monifieth Golf Links whenever possible. I also enjoying playing and watching football, 
+              Whilst at University I have been a very active member of the Dundee University Triathlon Team,
+              having served on the committee for 3 years, including 1 year as Vice Captain. I am an avid golfer,
+              playing at Monifieth Golf Links whenever possible. I also enjoying playing and watching football,
               and listening to music.
             </p>
             <p>
-              My main passion in life is rooted in video games. Some of my earliest memories are of playing 
-              Pokemon Emerald on my brother's Gameboy Advance or playing Sonic the Hedgehog on my Dad's old 
-              Sega Megadrive. I love checking out the latest releases and I try to keep up to date with everything 
+              My main passion in life is rooted in video games. Some of my earliest memories are of playing
+              Pokemon Emerald on my brother's Gameboy Advance or playing Sonic the Hedgehog on my Dad's old
+              Sega Megadrive. I love checking out the latest releases and I try to keep up to date with everything
               gaming.
             </p>
           </div>
         </div>
+        <div class="container">
+          <div class="workeduint-img">
+            <img src="images/tri-pic.jpg" alt="Gregor Triathlon" />
+            <img src="images/golf-pic.jpg" alt="Gregor Golf" />
+          </div>
+        </div>
         <hr />
       </section>
-      <footer>
-        <div class="footer-nav">
-          <a href="#landing-page" class="footer-nav-link">Home</a>
-          <a href="projects" class="footer-nav-link">Projects</a>
-          <a href="#interests" class="footer-nav-link">Interests</a>
-        </div>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/gregor-mitchell-849b481bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/gmitchell2000" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </footer>
-    </main>
-    <script src="main.js"></script>
-  </body>
+    </section>
+    <!--Footer ======================================================================================================-->
+
+    <footer>
+      <div class="footer-nav">
+        <a href="#landing-page" class="footer-nav-link">Home</a>
+        <a href="projects" class="footer-nav-link">Projects</a>
+        <a href="#interests" class="footer-nav-link">Interests</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/gregor-mitchell-849b481bb/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/gmitchell2000" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+
 </html>

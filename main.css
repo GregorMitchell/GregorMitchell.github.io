@@ -42,6 +42,17 @@ img {
   height: auto;
 }
 
+hr {
+  margin: 4rem 0;
+  background: linear-gradient(
+    to right,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  border: 0;
+  height: 1px;
+}
+
 /* Header ========================================================================================================*/
 
 header {
@@ -273,6 +284,13 @@ nav {
 .project-title-heading h2 {
   font-size: 4rem;
   margin-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .project-title-heading p {
@@ -300,18 +318,13 @@ nav {
 .project-description h2 {
   font-size: 2rem;
   margin: 2rem 0;
-  background: linear-gradient(
-    to right,
-    rgba(249, 105, 14, 1) 0%,
-    rgba(249, 105, 14, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(249, 105, 14, 1);
 }
 
 .project-description p {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
+  margin-left: 5rem;
 }
 
 .project-link {
@@ -320,57 +333,83 @@ nav {
   font-size: 1.4rem;
 }
 
+/*Work/Education/Interests========================================================================================================*/
 
-/* Interests =====================================================================================================*/
-
-.interests {
-  width: 100%;
+.workeduint {
+  padding: 3rem 0;
   min-height: 100vh;
   max-width: 100rem;
   margin: auto;
 }
 
-.interests .container {
-  display: flex;
-  align-items: center;
-  min-height: 80vh;
+.has-margin-right {
+  margin: 0 3rem 0 0;
 }
 
-.interests-img img {
-  height: 15rem;
-  width: auto;
-  border-radius: 50%;
-  margin: 2rem;
-  box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
-}
-
-.interests-text-box {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-
-.interests-text-box h2 {
+.workeduint-title-heading h2 {
   font-size: 4rem;
   margin-bottom: 20px;
-}
-
-.interests-text-box p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-  padding: 0;
-  margin-bottom: 1.45rem;
-}
-
-hr {
-  margin: 4rem 0;
   background: linear-gradient(
     to right,
     rgba(249, 105, 14, 1) 0%,
     rgba(102, 51, 153, 1) 100%
   );
-  border: 0;
-  height: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.workeduint-title-heading p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  margin-bottom: 1.45rem;
+}
+
+.workeduint-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.45rem 5rem 1.45rem;
+}
+
+.workeduint-img {
+  flex: 1;
+}
+
+.workeduint-description {
+  flex: 1;
+}
+
+.workeduint-description h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  margin-bottom: 1.45rem;
+}
+
+.workeduint-description p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  margin-left: 5rem;
+}
+
+.workeduint-link {
+  display: inline-block;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.workeduint .container {
+  display: inline-block;
+  text-align:center;
+}
+
+.workeduint-img img {
+  height: 15rem;
+  width: auto;
+  border-radius: 50%;
+  margin: 2rem;
+  box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
 }
 
 /* Footer ======================================================================================================= */
