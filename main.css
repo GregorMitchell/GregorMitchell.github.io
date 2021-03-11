@@ -239,14 +239,13 @@ nav {
   text-align: center;
 }
 
-.main-message h2 {
-  font-size: 4rem;
-  font-weight: 400;
-}
-
 .main-message h3 {
   font-size: 4rem;
   margin: 1rem 0;
+  color: white;
+}
+
+.subheader {
   color: rgba(249, 105, 14, 1);
   background: linear-gradient(
     to right,
